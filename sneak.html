@@ -9,6 +9,25 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/3ee3501b25.js" crossorigin="anonymous"></script>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script>
+		let tg = window.Telegram.WedApp;
+		let buy = document.getElementById("buy");
+		let buy = document.getElementById("buy1");
+		let buy = document.getElementById("buy2");
+		let buy = document.getElementById("buy3");
+		let order = document.getElementById("order");
+
+		buy.addEventListener("click", () => {
+			document.getElementById("all").style.display = "none";
+			document.getElementById("form").style.display = "block";
+			document.getElementById("Имя").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
+		});
+
+		order.addEventListener("click", () => {
+			tg.close();
+		});
+
+	</script>
 </head>
 
 
@@ -93,26 +112,7 @@
 		<button id="order">Оплатить</button>
 	</form>
 
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<script>
-		let tg = window.Telegram.WedApp;
-		let buy = document.getElementById("buy");
-		let buy = document.getElementById("buy1");
-		let buy = document.getElementById("buy2");
-		let buy = document.getElementById("buy3");
-		let order = document.getElementById("order");
 
-		buy.addEventListener("click", () => {
-			document.getElementById("all").style.display = "none";
-			document.getElementById("form").style.display = "block";
-			document.getElementById("Имя").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
-		});
-
-		order.addEventListener("click", () => {
-			tg.close();
-		});
-
-	</script>
 
 
 </body>
