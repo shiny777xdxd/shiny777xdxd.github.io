@@ -113,7 +113,7 @@ img {
     line-height: 130%;
     color: #e01533;
 }
-.pros a{
+.pros button{
     color: #e01533;
     border: 2px solid #e01533;
 	border-radius: 10px;
@@ -123,7 +123,7 @@ img {
     text-decoration: none;
     color: #e01533;
 }
-.pros a:hover{
+.pros a:button{
     color: #fff;
     cursor: pointer;
     background-color: #e01533;
