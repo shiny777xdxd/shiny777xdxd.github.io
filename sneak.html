@@ -93,7 +93,7 @@
 			    	<h1><i class="fa fa-user-circle-o"></i> Регистрация</h1>
 			    </div>
 				<div class="popup-name">
-					<input type="text"  name="" placeholder="Придумайте имя">
+					<input type="text"  name="" placeholder="Имя">
 				</div>
 				<div class="popup-name">
 					<input type="text"  placeholder="Придумайте пароль" name="">
@@ -119,6 +119,7 @@
 		buy.addEventListener("click", () => {
 			document.getElementById("all").style.display = "none";
 			document.getElementById("popup").style.display = "block";
+			document.getElementById("Имя").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
 		});
 
 
