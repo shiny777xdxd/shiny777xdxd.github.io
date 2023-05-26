@@ -123,7 +123,7 @@ img {
     text-decoration: none;
     color: #e01533;
 }
-.card a:button{
+.pros button:hover{
     color: #fff;
     cursor: pointer;
     background-color: #e01533;
