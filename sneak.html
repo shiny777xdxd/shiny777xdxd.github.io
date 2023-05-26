@@ -34,19 +34,19 @@
 						<img class="card-img" src="./лого.png" alt="VGG emboss mod">
 						<h4 class="card-title">Деанонимизация (деанон)</h4>
 						<p>Множество авторских методичек и туторов</p>
-						<p class="pros" ><button id="buy">Купить</button></p>
+						<p class="pros" ><button id="buy1">Купить</button></p>
 					</div>
 					<div class="card">
 						<img class="card-img" src="./лого.png" alt="VGG emboss mod">
 						<h4 class="card-title">Программирование</h4>
 						<p>Различные дорогие курсы по разным языкам программирования, подборки с видео и тд и тп</p>
-						<p class="pros" ><button id="buy">Купить</button></p>
+						<p class="pros" ><button id="buy2">Купить</button></p>
 					</div>
 					<div class="card">
 						<img class="card-img" src="./лого.png" alt="VGG emboss mod">
 						<h4 class="card-title">Схемки заработка</h4>
 						<p>Множество работающих схем, от серых до полностью бедых схем</p>
-						<p class="pros" ><button id="buy">Купить</button></p>
+						<p class="pros" ><button id="buy3">Купить</button></p>
 					</div>
 				</div>
 			</div>
@@ -85,40 +85,25 @@
 			</div>
 		</div>
 	</div>
-	<div id="popup" class="popup">
-		<div class="popup-body">
-			<div class="popup-content">
-				<a href="#" class="popup-clous"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-			    <div class="popup-titel">
-			    	<h1><i class="fa fa-user-circle-o"></i> Регистрация</h1>
-			    </div>
-				<div class="popup-name">
-					<input type="text"  name="" placeholder="Имя">
-				</div>
-				<div class="popup-name">
-					<input type="text"  placeholder="Придумайте пароль" name="">
-				</div>
-				<div class="popup-name">
-					<input type="text"  placeholder="Впишите эл. почту" name="">
-				</div>
-				<div class="popup-name">
-					<a href="#">
-						<input type="submit" value="Готово" name=""  >
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<form class="from" id="form">
+		<input type="text" placeholder="Имя" id="user_name">
+		<input type="text" placeholder="Email" id="user_email">
+		<input type="text" placeholder="Телефон" id="user_phone">
+		<button id="order">Оплатить</button>
+	</form>
 
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script>
 		let tg = window.Telegram.WedApp;
 		let buy = document.getElementById("buy");
+		let buy = document.getElementById("buy1");
+		let buy = document.getElementById("buy2");
+		let buy = document.getElementById("buy3");
 		let order = document.getElementById("order");
 
 		buy.addEventListener("click", () => {
 			document.getElementById("all").style.display = "none";
-			document.getElementById("popup").style.display = "block";
+			document.getElementById("form").style.display = "block";
 			document.getElementById("Имя").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
 		});
 
