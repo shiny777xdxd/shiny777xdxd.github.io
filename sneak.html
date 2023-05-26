@@ -91,7 +91,9 @@
 		<input type="text" placeholder="Имя" id="user_name">
 		<input type="text" placeholder="Email" id="user_email">
 		<input type="text" placeholder="Телефон" id="user_phone">
-		<div id="error"></div>
+		<div id="error1"></div>
+		<div id="error2"></div>
+		<div id="error3"></div>
 		<button id="order">Оплатить</button>
 	</form>
 
@@ -137,25 +139,25 @@
 			let email = document.getElementById("user_email").value;
 			let phone = document.getElementById("user_phone").value;
 			if(name.length < 2) {
-				document.getElementById("error").innerText = "Ощибка в имени";
+				document.getElementById("error1").innerText = "Ощибка в имени";
 				return;
 
 			}
 			if(email.length < 7) {
-				document.getElementById("error").innerText = "Ощибка в email";
+				document.getElementById("error2").innerText = "Ошибка в email";
 				return;
 
 			}
 			if(phone.length < 5) {
-				document.getElementById("error").innerText = "Ощибка в номере телефона";
+				document.getElementById("error3").innerText = "Ошибка в номере телефона";
 				return;
 
 			}
 
 			let data = {
-			name: name,
-			email: email,
-			phone: phone
+				name: name,
+				email: email,
+				phone: phone
 
 			}
 
