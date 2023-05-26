@@ -31,24 +31,24 @@
 						<p>Взломы, фишинги, кибербезопасность и многое другое</p>
 						<p class="pros" ><button id="buy">Купить</button></p>
 					</div>
-<!--					<div class="card">-->
-<!--						<img class="card-img" src="./лого.png" alt="VGG emboss mod">-->
-<!--						<h4 class="card-title">Деанонимизация (деанон)</h4>-->
-<!--						<p>Множество авторских методичек и туторов</p>-->
-<!--						<p class="pros" ><button id="buy1">Купить</button></p>-->
-<!--					</div>-->
-<!--					<div class="card">-->
-<!--						<img class="card-img" src="./лого.png" alt="VGG emboss mod">-->
-<!--						<h4 class="card-title">Программирование</h4>-->
-<!--						<p>Различные дорогие курсы по разным языкам программирования, подборки с видео и тд и тп</p>-->
-<!--						<p class="pros" ><button id="buy2">Купить</button></p>-->
-<!--					</div>-->
-<!--					<div class="card">-->
-<!--						<img class="card-img" src="./лого.png" alt="VGG emboss mod">-->
-<!--						<h4 class="card-title">Схемки заработка</h4>-->
-<!--						<p>Множество работающих схем, от серых до полностью бедых схем</p>-->
-<!--						<p class="pros" ><button id="buy3">Купить</button></p>-->
-<!--					</div>-->
+					<div class="card">
+						<img class="card-img" src="./лого.png" alt="VGG emboss mod">
+						<h4 class="card-title">Деанонимизация (деанон)</h4>
+						<p>Множество авторских методичек и туторов</p>
+						<p class="pros" ><button id="buy1">Купить</button></p>
+					</div>
+					<div class="card">
+						<img class="card-img" src="./лого.png" alt="VGG emboss mod">
+						<h4 class="card-title">Программирование</h4>
+						<p>Различные дорогие курсы по разным языкам программирования, подборки с видео и тд и тп</p>
+						<p class="pros" ><button id="buy2">Купить</button></p>
+					</div>
+					<div class="card">
+						<img class="card-img" src="./лого.png" alt="VGG emboss mod">
+						<h4 class="card-title">Схемки заработка</h4>
+						<p>Множество работающих схем, от серых до полностью бедых схем</p>
+						<p class="pros" ><button id="buy3">Купить</button></p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -98,6 +98,7 @@
 	<script>
 		let tg = window.Telegram.WedApp;
 		let buy = document.getElementById("buy");
+		let buy1 = document.getElementById("buy1");
 		let order = document.getElementById("order");
 
 		buy.addEventListener("click", () => {
@@ -105,6 +106,26 @@
 			document.getElementById("form").style.display = "block";
 			document.getElementById("Имя").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
 		});
+
+		buy1.addEventListener("click", () => {
+			document.getElementById("all").style.display = "none";
+			document.getElementById("form").style.display = "block";
+			document.getElementById("Имя").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
+		});
+
+		buy2.addEventListener("click", () => {
+			document.getElementById("all").style.display = "none";
+			document.getElementById("form").style.display = "block";
+			document.getElementById("Имя").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
+		});
+
+		buy3.addEventListener("click", () => {
+			document.getElementById("all").style.display = "none";
+			document.getElementById("form").style.display = "block";
+			document.getElementById("Имя").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
+		});
+
+
 
 		order.addEventListener("click", () => {
 			tg.close();

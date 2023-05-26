@@ -226,10 +226,26 @@ img {
     padding: 15px 10px;
     font-size: 14px;
     border: 2px solid silver;
-    border-radius: 5px;
+    border-radius: 25px;
 
 }
 
 .form input:focus{
-    border-color: #db5d5d;
+    border-color: #e01533;
+}
+
+.form button{
+    width: 90%;
+    outline: none;
+    margin: 10px 5%;
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 2px solid silver;
+    border-radius: 25px;
+}
+
+.form button:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: #e01533;
 }
