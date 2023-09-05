@@ -97,6 +97,10 @@
 
 @media (max-width:650px) {
     .popupbutton {
-        top: 98%;
+        top: 97%;
+    }
+
+    .popup h1{
+        font-size: 80%;
     }
 }
